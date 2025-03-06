@@ -21,7 +21,7 @@ IWAT is a PowerShell-based utility designed to simplify the process of packaging
 ## Installation
 
 1. Clone this repository or download the script: `git clone https://github.com/yourusername/IWAT.git`
-2. Run the script in PowerShell: `powershell -ExecutionPolicy Bypass -File Intune-win32-app-v2.ps1`
+2. Run the script in PowerShell: `powershell -ExecutionPolicy Bypass -File Intune-win32-app.ps1`
 3. On first run, the script will prompt you to select the location of IntuneWinAppUtil.exe
 
 ## Running the Script
@@ -30,19 +30,19 @@ By default, Windows restricts running unsigned PowerShell scripts. You have seve
 
 ### Option 1: Bypass execution policy for a single script
 ```powershell
-powershell -ExecutionPolicy Bypass -File Intune-win32-app-v2.ps1
+powershell -ExecutionPolicy Bypass -File Intune-win32-app.ps1
 ```
 
 ### Option 2: Temporarily change execution policy in current session
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\Intune-win32-app-v2.ps1
+.\Intune-win32-app.ps1
 ```
 
 ### Option 3: Unblock the script file (recommended for trusted scripts)
 ```powershell
-Unblock-File -Path .\Intune-win32-app-v2.ps1
-.\Intune-win32-app-v2.ps1
+Unblock-File -Path .\Intune-win32-app.ps1
+.\Intune-win32-app.ps1
 ```
 > [!IMPORTANT]
 > **Note**: Always review scripts before running them with bypassed execution policies to ensure they're from trusted sources.
