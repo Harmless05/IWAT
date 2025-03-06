@@ -20,7 +20,7 @@ IWAT is a PowerShell-based utility designed to simplify the process of packaging
 
 ## Installation
 
-1. Clone this repository or download the script: `git clone https://github.com/yourusername/IWAT.git`
+1. Clone this repository or download the script: `git clone https://github.com/Harmless05/IWAT.git`
 2. Run the script in PowerShell: `powershell -ExecutionPolicy Bypass -File Intune-win32-app.ps1`
 3. On first run, the script will prompt you to select the location of IntuneWinAppUtil.exe
 
