@@ -26,7 +26,8 @@ IWAT is a PowerShell-based utility designed to simplify the process of packaging
 
 ## Running the Script
 
-By default, Windows restricts running unsigned PowerShell scripts. You have several options to run the script:
+> [!NOTE]
+> By default, Windows restricts running unsigned PowerShell scripts. You have several options to run the script:
 
 ### Option 1: Bypass execution policy for a single script
 ```powershell
@@ -59,7 +60,7 @@ Unblock-File -Path .\Intune-win32-app.ps1
 
 ### Packaging Applications
 
-1. Select option 1 from the main menu
+1. Select option `1` from the main menu
 2. Browse and select the .exe or .msi file you want to package
 3. If IntuneWinAppUtil path is not configured, you'll be prompted to select it
 4. The tool will create an .intunewin package in the configured output directory
